@@ -15,8 +15,8 @@ from Employees e
 left join EmpJobInfoes eji on e.Id = eji.Id
 --order by e.Address
 
-select * -- state --, min(ID)
+select state, min(ID)
 from Employees
-where State = 'MA'
+--where State = 'MA'
 group by State
-having State = 'MA'
+--having State = 'MA'

@@ -28,5 +28,11 @@ namespace SP
         {
             Close();
         }
+
+        private void DataGridViewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDGV frm = new frmDGV();
+            frm.ShowDialog();
+        }
     }
 }

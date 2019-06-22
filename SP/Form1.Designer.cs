@@ -30,9 +30,10 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.utilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productVerificationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataGridViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,10 +56,18 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+            this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
+            // 
             // utilitiesToolStripMenuItem
             // 
             this.utilitiesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.productVerificationToolStripMenuItem});
+            this.productVerificationToolStripMenuItem,
+            this.dataGridViewToolStripMenuItem});
             this.utilitiesToolStripMenuItem.Name = "utilitiesToolStripMenuItem";
             this.utilitiesToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             this.utilitiesToolStripMenuItem.Text = "Utilities";
@@ -66,16 +75,16 @@
             // productVerificationToolStripMenuItem
             // 
             this.productVerificationToolStripMenuItem.Name = "productVerificationToolStripMenuItem";
-            this.productVerificationToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.productVerificationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.productVerificationToolStripMenuItem.Text = "Product Verification";
             this.productVerificationToolStripMenuItem.Click += new System.EventHandler(this.ProductVerificationToolStripMenuItem_Click);
             // 
-            // exitToolStripMenuItem
+            // dataGridViewToolStripMenuItem
             // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exitToolStripMenuItem.Text = "E&xit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
+            this.dataGridViewToolStripMenuItem.Name = "dataGridViewToolStripMenuItem";
+            this.dataGridViewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dataGridViewToolStripMenuItem.Text = "DataGridView";
+            this.dataGridViewToolStripMenuItem.Click += new System.EventHandler(this.DataGridViewToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -101,6 +110,7 @@
         private System.Windows.Forms.ToolStripMenuItem utilitiesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productVerificationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataGridViewToolStripMenuItem;
     }
 }
 
